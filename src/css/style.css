@@ -5,9 +5,65 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    }
-      
-    code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
-    }
+}
+    
+code {
+font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.layout{
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%
+}
+
+.namecard{
+    position:absolute;
+    top:40vh;
+    left:0px;
+    width: 100%;
+    float: left;
+    margin-bottom: 10%;
+    padding-left: 20%;
+}
+
+.title h1{
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#hexagon {
+    width: 100px;
+    height: 57.735px;
+    background: red;
+    position: relative;
+}
+
+#hexagon::before {
+content: "";
+position: absolute;
+top: -28.8675px;
+left: 0;
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 28.8675px solid red;
+}
+
+#hexagon::after {
+content: "";
+position: absolute;
+bottom: -28.8675px;
+left: 0;
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-top: 28.8675px solid red;
+}
+    
