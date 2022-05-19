@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Nav, NavItem, NavLink} from 'reactstrap';
-import {Link} from 'react-router-dom';
+import {Nav, NavItem} from 'reactstrap';
+import { Link } from "gatsby"
 import '../css/style.css';
 
 class Menu extends Component {
@@ -9,16 +9,16 @@ class Menu extends Component {
       <div className = "sidenav">
         <Nav vertical>
           <NavItem>
-            <NavLink href="#">Welcome</NavLink>
+            <Link href="#">Welcome</Link>
           </NavItem>
           <NavItem>
-            <NavLink href="#">About</NavLink>
+            <Link href="#">About</Link>
           </NavItem>
           <NavItem>
-            <NavLink href="/stories">Stories</NavLink>
+            <Link href="/stories/">Stories</Link>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Contact</NavLink>
+            <Link href="#">Contact</Link>
           </NavItem>
         </Nav>
       </div>
