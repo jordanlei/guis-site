@@ -9,16 +9,16 @@ class Menu extends Component {
       <div className = "sidenav">
         <Nav vertical>
           <NavItem>
-            <Link href="#">Welcome</Link>
+            <Link to="#">Welcome</Link>
           </NavItem>
           <NavItem>
-            <Link href="#">About</Link>
+            <Link to="#">About</Link>
           </NavItem>
           <NavItem>
-            <Link href="/stories/">Stories</Link>
+            <Link to="/stories/">Stories</Link>
           </NavItem>
           <NavItem>
-            <Link href="#">Contact</Link>
+            <Link to="#">Contact</Link>
           </NavItem>
         </Nav>
       </div>
