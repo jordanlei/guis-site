@@ -4,13 +4,13 @@ import "../css/style.css"
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <div className="blog-posts">
+    <div className="posts">
       {posts
         // .slice(0, n) to get only the first n items
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({node: post}) => {
           return (
-            <div className="blog-post-preview" key={post.id}>
+            <div className="post-preview" key={post.id}>
               <h1>
                 <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link>
               </h1>
