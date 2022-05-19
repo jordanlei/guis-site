@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Nav, NavItem} from 'reactstrap';
-import { Link } from "gatsby"
+import {Link, withPrefix} from "gatsby"
 import '../css/style.css';
 
 class Menu extends Component {
@@ -15,7 +15,7 @@ class Menu extends Component {
             <Link to="#">About</Link>
           </NavItem>
           <NavItem>
-            <Link to="/stories/">Stories</Link>
+            <Link to={withPrefix("/stories/")}>Stories</Link>
           </NavItem>
           <NavItem>
             <Link to="#">Contact</Link>
