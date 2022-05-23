@@ -9,23 +9,26 @@ class Index extends Component {
     render() {
       return (
         <Layout>
-          <div style={{color: "white", backgroundColor: "black", height: "100vh"}}>
-              <Parallax pages={3} style={{ top: '0', left: '0' }}>
+          <div >
+              <Parallax pages={1.5} style={{ top: '0', left: '0' }}>
+                <div className = "title" style={{color: "white", backgroundColor: "black", height: "100vh"}}>
+
                 <ParallaxLayer
                   offset={0}
-                  speed={2.5}
+                  speed={2.5}s
                   style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                  <div className = "namecard title">
-                    <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;IN SCIENCE</h1><br/>
+                  <div className = "namecard">
                     <h1>GROWING UP</h1>
+                    <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;IN SCIENCE</h1><br/>
                   </div>
                 </ParallaxLayer>
+                </div>
 
                 <ParallaxLayer offset={0.9} speed={0.5} style={{ backgroundColor: '#ff6d6d' }} />
 
                 <ParallaxLayer
                   offset={0.7}
-                  speed={1}
+                  speed={0.75}
                   style={{
                     display: 'flex',
                     justifyContent: 'center',

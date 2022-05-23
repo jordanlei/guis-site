@@ -15,7 +15,7 @@ class Menu extends Component {
             <Link to="#">About</Link>
           </NavItem>
           <NavItem>
-            <Link to={withPrefix("/stories/")}>Stories</Link>
+            <Link to={"/stories/"}>Stories</Link>
           </NavItem>
           <NavItem>
             <Link to="#">Contact</Link>
