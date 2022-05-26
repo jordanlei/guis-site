@@ -12,7 +12,7 @@ class Index extends Component {
       return (
         <Layout>
           <div >
-              <Parallax pages={2.3} style={{ top: '0', left: '0', backgroundColor: "black"}}>
+              <Parallax pages={2.3} style={{ top: '0', left: '0', backgroundColor: "#021024"}}>
                 <div className = "title" style={{color: "white", height: "100vh"}}>
 
                 <ParallaxLayer
@@ -33,7 +33,7 @@ class Index extends Component {
                     style={{
                       display: 'flex',
                       alignItems: 'top',
-                      color: 'white'
+                      color: 'rgba(255, 255, 255, 0.7)'
                     }}>
                     <RecentEvents/>
                 </ParallaxLayer>

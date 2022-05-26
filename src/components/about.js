@@ -6,10 +6,11 @@ export default function Layout({children, style}) {
   return (
     <section id = "about">
     <div className = "section" style = {style}>
-    <h1>ABOUT</h1>
+    <h1><span className="light-highlight">ABOUT</span></h1>
     <p>
-    <i>Have you ever wondered what your advisor struggled with as a graduate student? 
-    What they struggle with now? </i>
+    <br/>
+    <b><i>Have you ever wondered what your advisor struggled with as a graduate student? 
+    What they struggle with now?  </i></b>
     Growing up in Science is a conversation series 
     featuring personal narratives of becoming and being a scientist.
     <br/><br/>

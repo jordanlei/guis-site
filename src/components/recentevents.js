@@ -31,10 +31,10 @@ const Layout = ({ pageTitle, children }) => {
     .map(({node: post}) => {
     return (
         <div className="post-preview" key={post.id}>
-        <h2>
-            <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link>
-        </h2>
-        <h3>{post.frontmatter.date}</h3>
+        <h3>
+            <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link> &nbsp;&bull;&nbsp; 
+            <i>{post.frontmatter.date}</i>
+        </h3>
         <p>{post.excerpt}</p>
         </div>
     )
@@ -42,7 +42,8 @@ const Layout = ({ pageTitle, children }) => {
 
     return (
       <div className = "section">
-          <h1>RECENT EVENTS</h1>
+          <h1><span className="dark-highlight">RECENT EVENTS</span></h1>
+          <br/>
           {recentevents}
       </div>
     )
