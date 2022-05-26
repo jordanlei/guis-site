@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?&family=Archivo&display=swap');
 
 body {
     margin: 0;
@@ -21,9 +21,27 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     padding-bottom: 5%
 }
 
+.section{
+    font-family: 'Archivo', 'sans-serif';
+    padding-top: 5%;
+    padding-left: 25%;
+    padding-right: 20%;
+    padding-bottom: 5%
+}
+
+.section h1{
+    letter-spacing: 10px;
+}
+
+.section p{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
 .namecard{
     position:absolute;
-    top:40vh;
+    top:35vh;
     left:0px;
     width: 100%;
     float: left;
@@ -39,8 +57,8 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 .title h1{
     font-family: 'Archivo', sans-serif;
     font-weight: 300;
-    letter-spacing: 10px;
-    font-size: 50px;
+    letter-spacing: 8px;
+    font-size: 60px;
     color: rgba(255, 255, 255, 0.7); 
 }
 
@@ -59,14 +77,14 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 3px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(100, 100, 100, 1);
     display: block;
 }
   
 .sidenav a:hover {
     text-decoration: none; 
     font-size: 22px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(155, 155, 155, 1);
 }
   
 .sidenav a:active{
@@ -74,34 +92,4 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     color: rgba(255, 255, 255, 0.9);
 }
 
-#hexagon {
-    width: 100px;
-    height: 57.735px;
-    background: red;
-    position: relative;
-}
-
-#hexagon::before {
-content: "";
-position: absolute;
-top: -28.8675px;
-left: 0;
-width: 0;
-height: 0;
-border-left: 50px solid transparent;
-border-right: 50px solid transparent;
-border-bottom: 28.8675px solid red;
-}
-
-#hexagon::after {
-content: "";
-position: absolute;
-bottom: -28.8675px;
-left: 0;
-width: 0;
-height: 0;
-border-left: 50px solid transparent;
-border-right: 50px solid transparent;
-border-top: 28.8675px solid red;
-}
     
