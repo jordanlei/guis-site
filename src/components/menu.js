@@ -12,6 +12,9 @@ class Menu extends Component {
             <Link to="#">Welcome</Link>
           </NavItem>
           <NavItem>
+            <Link to="#">Events</Link>
+          </NavItem>
+          <NavItem>
             <Link to="#">About</Link>
           </NavItem>
           <NavItem>
