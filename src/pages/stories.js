@@ -25,7 +25,10 @@ export default function Index({ data }) {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      filter: {frontmatter: {tag : {eq: "story"}}}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      ){
       edges {
         node {
           excerpt(pruneLength: 250)
@@ -34,6 +37,7 @@ export const pageQuery = graphql`
             slug
             title
             date(formatString: "MMMM DD, YYYY")
+            tag
           }
         }
       }

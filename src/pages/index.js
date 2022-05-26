@@ -2,56 +2,31 @@ import React, { Component } from 'react';
 import Layout from "../components/layout.js";
 import "../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import About from "../components/about.js"
 import RecentEvents from "../components/recentevents.js"
+import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 
 class Index extends Component {
     render() {
       return (
         <Layout>
-          <div >
-              <Parallax pages={2.3} style={{ top: '0', left: '0', backgroundColor: "#021024"}}>
-                <div className = "title" style={{color: "white", height: "100vh"}}>
-
-                <ParallaxLayer
-                  offset={0}
-                  speed={2.5}s
-                  style={{ display: 'flex', alignItems: 'top' }}>
-                  <div className = "namecard">
-                    <h1>growing up</h1>
-                    <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;in science</h1><br/>
+              <div style={{backgroundColor: "#021024"}}>
+              <ParallaxProvider>
+                  <Parallax translateY={['-200px', '200px']}>
+                  <div className = "title" style={{color: "white", height: "100vh"}}>
+                    <div className = "namecard">
+                    <Parallax translateY={['500px', '-500px']}>
+                      <h1>growing up</h1>
+                      <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;in science</h1><br/>
+                    </Parallax>
+                    </div>
                   </div>
-                </ParallaxLayer>
-                </div>
-
-                {/* <ParallaxLayer offset={0.8} speed={0.5} style={{ backgroundColor: 'rgba(240, 240, 240, 0.9)' }}/> */}
-                <ParallaxLayer
-                    offset={0.99}
-                    speed={0.6}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'top',
-                      color: 'rgba(255, 255, 255, 0.7)'
-                    }}>
-                    <RecentEvents/>
-                </ParallaxLayer>
-                
-
-                <ParallaxLayer offset={1.5} speed={0.5} style={{ backgroundColor: 'rgba(240, 240, 240, 0.9)' }}/>
-                <ParallaxLayer
-                    offset={1.5}
-                    speed={0.6}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'top',
-                    }}>
-                    <About/>
-                  </ParallaxLayer>
-                
-              </Parallax>
-          </div>
+                  </Parallax>
+                  <RecentEvents/>
+                  <About/>
+              </ParallaxProvider>
+              </div>
         </Layout>
       );
     }

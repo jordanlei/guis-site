@@ -18,10 +18,13 @@ class Menu extends Component {
             <Link to="#">About</Link>
           </NavItem>
           <NavItem>
+            <Link to="#">Groups</Link>
+          </NavItem>
+          <NavItem>
             <Link to={"/stories/"}>Stories</Link>
           </NavItem>
           <NavItem>
-            <Link to="#">Contact</Link>
+            <Link to="#">Participate</Link>
           </NavItem>
         </Nav>
       </div>

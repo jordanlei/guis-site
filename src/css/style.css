@@ -29,12 +29,17 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     padding-bottom: 5%
 }
 
-.dark-highlight{
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #152c4d 50%);
+.highlight{
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, rgba(52, 124, 224, 0.3) 50%);
 }
 
-.light-highlight{
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #92b1de 50%);
+.light{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.dark{
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .section h1{
@@ -42,6 +47,11 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     letter-spacing: 10px;
     font-weight: 600;
     /* background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%); */
+}
+
+.section a{
+    color:inherit;
+    text-decoration:none;
 }
 
 .section p{
@@ -63,6 +73,8 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 .title{
     background-image: url("../images/purkinje.svg");
     background-size:cover;
+    background-position:fixed;
+    z-index: -1;
 }
 
 .title h1{
@@ -88,7 +100,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 3px;
-    color: rgba(100, 100, 100, 1);
+    color: rgba(120, 120, 120, 1);
     display: block;
 }
   
