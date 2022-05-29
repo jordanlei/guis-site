@@ -1,22 +1,37 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/layout.js";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  var date = ""
+  if (frontmatter.date !== "Invalid date"){
+    date = frontmatter.date
+  }
+
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+    <Layout>
+      <div className = "page" style = {{"backgroundColor": "#021024"}}>
+      <div className = "dark section">
+        <h1>
+            <span className="highlight">
+            {frontmatter.title}
+            </span>
+          </h1>
+        <h3>{date}</h3>
       </div>
-    </div>
+
+      <div className = "light section">
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+      </div>
+      </div>
+    </Layout>
   )
 }
 

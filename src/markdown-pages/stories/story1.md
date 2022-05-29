@@ -1,5 +1,5 @@
 ---
-slug: "/stories/story2"
+slug: "/stories/story1"
 date: "2019-05-22"
 title: "Story 2"
 tag: "story"

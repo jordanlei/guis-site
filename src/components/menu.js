@@ -9,13 +9,13 @@ class Menu extends Component {
       <div className = "sidenav">
         <Nav vertical>
           <NavItem>
-            <Link to="#">Welcome</Link>
+            <Link to={"/"}>Welcome</Link>
           </NavItem>
           <NavItem>
             <Link to="#">Events</Link>
           </NavItem>
           <NavItem>
-            <Link to="#">About</Link>
+            <Link to={"/#about"}>About</Link>
           </NavItem>
           <NavItem>
             <Link to="#">Groups</Link>
@@ -24,7 +24,7 @@ class Menu extends Component {
             <Link to={"/stories/"}>Stories</Link>
           </NavItem>
           <NavItem>
-            <Link to="#">Participate</Link>
+            <Link to={"/participate/"}>Participate</Link>
           </NavItem>
         </Nav>
       </div>

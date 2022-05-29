@@ -18,10 +18,10 @@ export default function About({children, style}) {
           featuring personal narratives of becoming and being a scientist.
           <br/><br/>
           Growing up in Science was started in 2014 at New York University by 
-          professors Wei Ji Ma and Cristina Alberini, and is now worldwide. <span className = "highlight">
+          professors Wei Ji Ma and Cristina Alberini, and is now worldwide.
           <a href = "https://www.science.org/doi/10.1126/science.357.6354.942" target = "_blank">
             This article
-          </a></span> describes the origin and impact of the series. 
+          </a> describes the origin and impact of the series. 
           
           At a typical Growing up in Science event, one faculty member 
           shares their life story, with a focus on struggles, failures, doubts, 
