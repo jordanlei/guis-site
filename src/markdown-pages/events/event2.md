@@ -1,5 +1,5 @@
 ---
-slug: "/my-hidden-post"
+slug: "/events/event2"
 date: "2022-05-22"
 title: "Newer Event"
 tag: "event"

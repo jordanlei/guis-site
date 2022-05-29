@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Parallax } from "react-scroll-parallax"
 import "../css/style.css"
+
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
     query{
@@ -31,19 +33,22 @@ const Layout = ({ pageTitle, children }) => {
     .map(({node: post}) => {
     return (
         <div className="post-preview" key={post.id}>
-        <h2>
-            <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link>
-        </h2>
-        <h3>{post.frontmatter.date}</h3>
+        <h3>
+            <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link> &nbsp;&bull;&nbsp; 
+            <i>{post.frontmatter.date}</i>
+        </h3>
         <p>{post.excerpt}</p>
         </div>
     )
     })
 
     return (
-      <div className = "section">
-          <h1>RECENT EVENTS</h1>
+      <div className = "dark section">
+        <Parallax translateY={["0px", "-200px"]}>
+          <h1><span className="highlight">RECENT EVENTS</span></h1>
+          <br/>
           {recentevents}
+        </Parallax>
       </div>
     )
   }
