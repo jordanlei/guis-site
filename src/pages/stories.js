@@ -6,8 +6,7 @@ import "../css/style.css"
 
 class Stories extends Component {
   constructor (data, props) {
-    super(props);
-    super(data);
+    super(data, props)
     const { edges: eventdata } = data.allMarkdownRemark
     this.state = {
       events: eventdata, 
