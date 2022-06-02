@@ -2,6 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout.js";
 import {Parallax, ParallaxProvider} from "react-scroll-parallax";
+import "../css/style.css"
+import "../css/mobile.css"
+
+
 
 
 export default function Template({

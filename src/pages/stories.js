@@ -3,6 +3,8 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import { Button, Row, Col } from 'reactstrap';
 import Layout from '../components/layout'
 import "../css/style.css"
+import "../css/mobile.css"
+
 
 class Stories extends Component {
   constructor (data, props) {
@@ -32,6 +34,17 @@ class Stories extends Component {
       <div className = "section dark" style = {{paddingRight: "5vw"}}>
           <h1><span className="highlight">Unofficial Stories</span></h1>
           <br/>
+          <p style={{paddingRight:"15vw"}}>
+          In lieu of abstracts, we ask speakers for "unofficial" stories. 
+          The following unofficial stories are shared here with 
+          the speakers' permission. GUIS is also partnering with
+          the <a href="https://storiesinscience.org/" target="__blank">
+            Journal of Stories in Science
+          </a>, 
+          which publishes stories about science from students, postdocs, 
+          faculty and the public from around the world. With the speakers' help, 
+          several of the stories below have now been republished in the journal.
+          </p>
           <h4>Filter by: 
           <Button size="lg" onClick={() => this.showNYU()}>NYU Events</Button>
           <Button size="lg" onClick={() => this.reset()}>Reset</Button>

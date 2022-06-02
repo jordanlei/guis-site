@@ -1,8 +1,10 @@
 import React, {Component, useState, useEffect, startTransition} from "react"
 import { Link, StaticQuery, graphql } from 'gatsby'
-import { Button, Row, Col } from 'reactstrap';
+import { Button, Row, Col, Card} from 'reactstrap';
 import Layout from '../components/layout'
 import "../css/style.css"
+import "../css/mobile.css"
+
 
 class Events extends Component {
   constructor (data, props) {
@@ -44,12 +46,13 @@ class Events extends Component {
           <Button size="lg" onClick={() => this.showNYU()}>NYU Events</Button>
           <Button size="lg" onClick={() => this.reset()}>Reset</Button>
           </h4>
-
+          <div className="desktop-only">
           <Row style={{paddingTop: "50px"}}>
             <Col xs={4}><h4>Date</h4></Col>
             <Col xs={6}><h4>Event</h4></Col>
             <Col xs={2}><h4>Location</h4></Col>
           </Row>
+          </div>
           <hr style = {{height: 3}}/>
           {
             this.state.events.map(({node: post}) => {
@@ -62,11 +65,28 @@ class Events extends Component {
               }
               else{
                 return (
-                  <Row>
-                    <Col xs={4}><h4>{post.frontmatter.date}</h4></Col>
-                    <Col xs={6}><h4><Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link></h4></Col>
-                    <Col xs={2}><h4>{post.frontmatter.location}</h4></Col>
-                  </Row>
+                  <div>
+                    <div className = "mobile-only">
+                    <Link to={post.frontmatter.slug}>
+                    <Card style={{
+                      marginTop: "10px", 
+                      padding: "10px", 
+                      backgroundColor: "rgba(52, 124, 224, 0.1)",
+                      }}>
+                      <h4>{post.frontmatter.date}</h4>
+                      <h4>{post.frontmatter.title}</h4>
+                      <h4>{post.frontmatter.location}</h4>
+                    </Card>
+                    </Link>
+                    </div>
+                    <div className = "desktop-only">
+                    <Row>
+                      <Col xs={4}><h4>{post.frontmatter.date}</h4></Col>
+                      <Col xs={6}><h4><Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link></h4></Col>
+                      <Col xs={2}><h4>{post.frontmatter.location}</h4></Col>
+                    </Row>
+                    </div>
+                  </div>
                 )
                 }
               }

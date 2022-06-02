@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../css/style.css"
+import "../css/mobile.css"
 import {Link, withPrefix} from "gatsby"
 import {Parallax} from "react-scroll-parallax"
 
