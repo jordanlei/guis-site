@@ -1,5 +1,5 @@
 ---
-slug: "/nyuschedule"
+slug: "/global"
 date: ""
 title: "GUIS Global Network"
 tags: ["page"]
@@ -75,6 +75,6 @@ Wei Ji Ma has also hosted Growing Up in Science events at other places:
 - Central European University (Feb 25, 2021)
 - Maastricht University (Mar 11, 2021)
 
-For inquiries, email Wei Ji Ma at weijima@nyu.edu.
+For inquiries, email Wei Ji Ma at weijima at nyu dot edu.
 
 

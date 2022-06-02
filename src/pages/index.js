@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Layout from "../components/layout.js";
 import "../css/style.css"
+import "../css/mobile.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "../components/about.js"
 import RecentEvents from "../components/recentevents.js"
@@ -19,7 +20,9 @@ class Index extends Component {
                   <div className = "namecard">
                     <Parallax translateY={['500px', '-500px']}>
                       <h1>growing up</h1>
-                      <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;in science</h1><br/>
+                      <h1>
+                        <span className="desktop-only">&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;</span>in science
+                        </h1><br/>
                     </Parallax>
                     </div>
                   <RecentEvents/>

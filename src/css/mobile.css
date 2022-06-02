@@ -1,0 +1,59 @@
+@media only screen and (max-width: 768px) {
+    .mobile-only{
+        display: block;
+    }
+
+    .desktop-only{
+        display: none;
+    }
+
+    .topnav{
+        font-family: 'Archivo', sans-serif;
+        position: fixed;
+        z-index: 1;
+        margin-top: -10px;
+        padding-bottom: 10px;
+        width: 100%;
+        text-decoration: "none" !important;
+    }
+
+    .dropdown-menu.dropdown-menu-end.show{
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .dropdown-menu a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .namecard h1{
+        font-size: 40px;
+    }
+
+    .title{
+        background-position: center;
+    }
+
+    .section{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .section h2{
+        font-size: 25px;
+    }
+
+    .section h3{
+        font-size: 22px;
+    }
+
+    .section h4{
+        font-size: 20px;
+    }
+
+    .section p{
+        font-size: 18px;
+    }
+}
