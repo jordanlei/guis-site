@@ -180,4 +180,8 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 .page .snippet{
     display: none;
 }
+
+.snippetblock h3{
+    display: none;
+}
     
