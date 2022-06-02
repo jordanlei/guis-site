@@ -12,7 +12,7 @@ class Menu extends Component {
             <Link to={"/"}>Welcome</Link>
           </NavItem>
           <NavItem>
-            <Link to={"/events/"}>Events</Link>
+            <Link to={"/#recent-events"}>Events</Link>
           </NavItem>
           <NavItem>
             <Link to={"/#about"}>About</Link>
