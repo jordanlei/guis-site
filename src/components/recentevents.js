@@ -13,7 +13,6 @@ const Layout = ({ pageTitle, children }) => {
         ){
         edges {
           node {
-            snippet
             id
             frontmatter {
               slug
@@ -41,7 +40,7 @@ const Layout = ({ pageTitle, children }) => {
         <h4>
         <i>{post.frontmatter.date} &nbsp;&nbsp;&nbsp;  {post.frontmatter.time} &nbsp;&nbsp;&nbsp; {post.frontmatter.location} </i>
         </h4>
-        <div className="snippet" dangerouslySetInnerHTML={{ __html: post.snippet}} />
+        {/* <div className="snippet" dangerouslySetInnerHTML={{ __html: post.snippet}} /> */}
         </div>
     )
     })
