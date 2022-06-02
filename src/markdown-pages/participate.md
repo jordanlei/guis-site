@@ -2,7 +2,7 @@
 slug: "/participate"
 date: ""
 title: "PARTICIPATE"
-tag: "page"
+tags: ["page"]
 ---
 
 There are many ways to get involved in Growing up in Science. Below, we have a few ways to participate, from less to more work:
@@ -14,7 +14,8 @@ You can find it <a href="https://www.science.org/doi/10.1126/science.357.6354.94
 
 ### Tweet your own story
 Use the hashtag #growingupinscience.
-Discuss your stories in a small group
+
+### Discuss your stories in a small group
 For example at a recurring student lunch.
 
 
@@ -80,4 +81,5 @@ Thank you and let me know if you have any questions!
 - I do not allow slides or other aids during the event. Just sitting in a chair and talking.
 - As moderator, I usually give my guest free reign to tell their story for 25-30 minutes, and I only occasionally ask for clarification. **Important exceptions:** The moderator should steer the speaker away from scientific content, because there are other venues for that. One way is to gently interrupt and say something like "I would like to come back to that friction with your advisor." Similarly, the moderator should steer the speaker away from boilerplate career advice.
 - Important: I recommend that you **do not record the sessions**. Recording might hold your guest back from speaking freely.
-- Please contact me at weijima at nyu dot edu if you have any questions. Good luck!
+
+Please contact me at weijima at nyu dot edu if you have any questions. Good luck!

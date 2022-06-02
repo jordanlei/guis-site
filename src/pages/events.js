@@ -4,7 +4,7 @@ import { Button, Row, Col } from 'reactstrap';
 import Layout from '../components/layout'
 import "../css/style.css"
 
-class Stories extends Component {
+class Events extends Component {
   constructor (data, props) {
     super(props);
     super(data);
@@ -31,7 +31,7 @@ class Stories extends Component {
       <Layout>
       <div className = "page" style = {{backgroundColor: "#021024"}}>
       <div className = "section dark" style = {{paddingRight: "5vw"}}>
-          <h1><span className="highlight">Unofficial Stories</span></h1>
+          <h1><span className="highlight">NYU Events</span></h1>
           <br/>
           <h4>Filter by: 
           <Button size="lg" onClick={() => this.showNYU()}>NYU Events</Button>
@@ -40,7 +40,8 @@ class Stories extends Component {
 
           <Row style={{paddingTop: "50px"}}>
             <Col xs={4}><h4>Date</h4></Col>
-            <Col xs={7}><h4>Name</h4></Col>
+            <Col xs={6}><h4>Event</h4></Col>
+            <Col xs={2}><h4>Location</h4></Col>
           </Row>
           <hr style = {{height: 3}}/>
           {
@@ -56,7 +57,8 @@ class Stories extends Component {
                 return (
                   <Row>
                     <Col xs={4}><h4>{post.frontmatter.date}</h4></Col>
-                    <Col xs={7}><h4><Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link></h4></Col>
+                    <Col xs={6}><h4><Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link></h4></Col>
+                    <Col xs={2}><h4>{post.frontmatter.location}</h4></Col>
                   </Row>
                 )
                 }
@@ -71,11 +73,11 @@ class Stories extends Component {
   }
 }
 
-const AllStories = (props) => 
+const AllEvents = (props) => 
   <StaticQuery query={graphql`
   query{
     allMarkdownRemark(
-        filter: {frontmatter: {tags : {in: "story"}}}
+        filter: {frontmatter: {tags : {in: "event"}}}
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
@@ -94,7 +96,7 @@ const AllStories = (props) =>
     }
   }
   `}
-  render = {data => <Stories{...data}{...props} />} 
+  render = {data => <Events{...data}{...props} />} 
   />
 
-export default AllStories;
+export default AllEvents;

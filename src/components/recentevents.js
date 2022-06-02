@@ -7,9 +7,9 @@ const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
     query{
       allMarkdownRemark(
-          filter: {frontmatter: {tag : {eq: "event"}}}
+          filter: {frontmatter: {tags : {in: "event"}}}
           sort: { order: DESC, fields: [frontmatter___date] }
-          limit: 5
+          limit: 3
         ){
         edges {
           node {
@@ -19,7 +19,7 @@ const Layout = ({ pageTitle, children }) => {
               slug
               title
               date(formatString: "MMMM DD, YYYY")
-              tag
+              tags
             }
           }
         }
@@ -37,7 +37,7 @@ const Layout = ({ pageTitle, children }) => {
             <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link> &nbsp;&bull;&nbsp; 
             <i>{post.frontmatter.date}</i>
         </h3>
-        <p>{post.excerpt}</p>
+        <p>{post.excerpt.replace('Official Story', '')}</p>
         </div>
     )
     })
@@ -48,6 +48,11 @@ const Layout = ({ pageTitle, children }) => {
           <h1><span className="highlight">RECENT EVENTS</span></h1>
           <br/>
           {recentevents}
+          <br/><br/>
+          <h3>
+          <Link to={"/events/"}>See All Events &#8594;</Link>
+          </h3>
+
         </Parallax>
       </div>
     )

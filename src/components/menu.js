@@ -12,13 +12,13 @@ class Menu extends Component {
             <Link to={"/"}>Welcome</Link>
           </NavItem>
           <NavItem>
-            <Link to="#">Events</Link>
+            <Link to={"/events/"}>Events</Link>
           </NavItem>
           <NavItem>
             <Link to={"/#about"}>About</Link>
           </NavItem>
           <NavItem>
-            <Link to="#">Groups</Link>
+            <Link to="#">Global</Link>
           </NavItem>
           <NavItem>
             <Link to={"/stories/"}>Stories</Link>
