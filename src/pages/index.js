@@ -14,15 +14,14 @@ class Index extends Component {
               <div style={{backgroundColor: "#021024"}}>
               <ParallaxProvider>
                   <Parallax translateY={['-200px', '200px']}>
-                  <div className = "title" style={{color: "white", height: "100vh"}}>
-                    <div className = "namecard">
+                  <div className = "title" style={{color: "white", height: "130vh"}} />
+                  </Parallax>
+                  <div className = "namecard">
                     <Parallax translateY={['500px', '-500px']}>
                       <h1>growing up</h1>
                       <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;in science</h1><br/>
                     </Parallax>
                     </div>
-                  </div>
-                  </Parallax>
                   <RecentEvents/>
                   <About/>
               </ParallaxProvider>

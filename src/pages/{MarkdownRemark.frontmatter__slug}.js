@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout.js";
+import {Parallax, ParallaxProvider} from "react-scroll-parallax";
+
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -12,25 +14,32 @@ export default function Template({
     date = frontmatter.date
   }
 
+  var mode = "light section"
+  if (frontmatter.tags == "page"){
+    mode = "dark section"
+  }
+
   return (
     <Layout>
+      <ParallaxProvider>
       <div className = "page" style = {{"backgroundColor": "#021024"}}>
-      <div className = "dark section">
+      <div className = {mode} style = {{minHeight: "100vh"}}>
+        <div>
         <h1>
             <span className="highlight">
             {frontmatter.title}
             </span>
           </h1>
         <h3>{date}</h3>
-      </div>
+        </div>
 
-      <div className = "light section">
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
       </div>
       </div>
+      </ParallaxProvider>
     </Layout>
   )
 }
@@ -43,6 +52,7 @@ export const pageQuery = graphql`
         slug
         date(formatString: "MMMM DD, YYYY")
         title
+        tags
       }
     }
   }
