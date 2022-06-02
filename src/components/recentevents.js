@@ -29,6 +29,7 @@ const Layout = ({ pageTitle, children }) => {
     `)
 
     const { edges: posts } = data.allMarkdownRemark
+    console.log(posts)
     const recentevents = posts
     // .slice(0, n) to get only the first n items
     .map(({node: post}) => {
@@ -40,7 +41,8 @@ const Layout = ({ pageTitle, children }) => {
         <h4>
         <i>{post.frontmatter.date} &nbsp;&nbsp;&nbsp;  {post.frontmatter.time} &nbsp;&nbsp;&nbsp; {post.frontmatter.location} </i>
         </h4>
-        {/* <div className="snippet" dangerouslySetInnerHTML={{ __html: post.snippet}} /> */}
+        {post.excerpt}
+        {<div dangerouslySetInnerHTML={{ __html: post.snippet}} />}
         </div>
     )
     })
