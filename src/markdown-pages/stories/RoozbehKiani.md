@@ -1,6 +1,6 @@
 ---
 slug: "/stories/roozbehkiani"
-date: "2022-05-31 13:00"
+date: "2022-05-31"
 title: "Roozbeh Kiani"
 tags: ["story", "event", "nyu"]
 location: Meyer 636
