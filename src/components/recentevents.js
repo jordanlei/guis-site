@@ -13,8 +13,7 @@ const Layout = ({ pageTitle, children }) => {
         ){
         edges {
           node {
-            snippet
-            html
+            excerpt(pruneLength: 300 format:HTML)
             frontmatter {
               slug
               title
@@ -28,7 +27,7 @@ const Layout = ({ pageTitle, children }) => {
       }
     }
     `)
-    
+
     const { edges: posts } = data.allMarkdownRemark
     console.log(posts)
     const recentevents = posts
@@ -42,8 +41,7 @@ const Layout = ({ pageTitle, children }) => {
         <h4>
         <i>{post.frontmatter.date} &nbsp;&nbsp;&nbsp;  {post.frontmatter.time} &nbsp;&nbsp;&nbsp; {post.frontmatter.location} </i>
         </h4>
-        {post.excerpt}
-        {/* {<div dangerouslySetInnerHTML={{ __html: post.snippet}} />} */}
+        <div className="snippetblock" dangerouslySetInnerHTML={{ __html: post.excerpt}} />
         </div>
     )
     })
