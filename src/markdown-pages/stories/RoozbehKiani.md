@@ -1,11 +1,18 @@
 ---
 slug: "/stories/roozbehkiani"
-date: "2022-05-31"
+date: "2022-05-31 13:00"
 title: "Roozbeh Kiani"
 tags: ["story", "event", "nyu"]
+location: Meyer 636
+time: 13:00 Eastern
 ---
+[[snippet]]
+| This event is part of the Growing up in Science "unofficial stories" series. <br/>
+| To attend online, please <a href="https://nyu.zoom.us/meeting/register/tJErdO6hrD0rG9OxqBCNCwkP35fkafCr-_5b" target="_blank">register here on zoom</a>
+
 ### Official Story
 Roozbeh Kiani is an Associate Professor of Neural Science and Psychology at New York University. He received his PhD from the University of Washington and performed his post-doctoral research at Stanford before joining NYU in 2013. Prior to starting his PhD, he completed his medical training in Iran. Kiani investigates the neural computations that underlie visual perception, perceptual decision making, and cognitive control. His research is supported by the National Institutes of Health and the Simons Collaboration on the Global Brain. For his scientific achievements, he has received a number of awards and honors, including the Donald B. Lindsley Prize in Behavioral Neuroscience, the Alfred P. Sloan Research Fellowship, the McKnight Scholar Award, the Pew Scholarship in Biomedical Sciences, and most recently the Troland Award from the National Academy of Sciences. Kiani is also a member of the Board of Scientific Counselors at the National Eye Institute.
+
 
 ### Unofficial Story
 Born and raised in Iran, Roozbeh experienced a tumultuous childhood in the midst of post-revolution social unrest and war. But it was a happy childhood too. Roozbeh's family frequently went camping, hiking, and fishing in the mountain ranges south of the Caspian sea. Roozbeh puzzled over everything he saw in those trips: what causes rock formations, how can one tell the distance of nearby lightning, how do the fish breathe, why do we get altitude sickness, ... At school, he gravitated toward sciences to understand the laws that govern nature. Solving his nature puzzles made him happy, and his extensive but haphazard collection of extra-curricular knowledge came handy in the last year of high school when he attended the International Chemistry Olympiad. Through a lucky chain of events, Roozbeh succeeded in the national selection exams for the Iranian team and participated in the international competition, which was held in China. The Iranian team did quite well that year, and Roozbeh won the top gold medal of the competition. But the most thrilling aspect of the competition was the opportunity to meet peers from tens of different countries and to learn about their customs, traditions, and languages. Roozbeh returned home with a deep appreciation of the beauty and power of diversity.

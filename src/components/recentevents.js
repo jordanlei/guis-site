@@ -13,13 +13,15 @@ const Layout = ({ pageTitle, children }) => {
         ){
         edges {
           node {
-            excerpt(pruneLength: 250)
+            snippet
             id
             frontmatter {
               slug
               title
               date(formatString: "MMMM DD, YYYY")
               tags
+              location
+              time
             }
           }
         }
@@ -32,29 +34,32 @@ const Layout = ({ pageTitle, children }) => {
     // .slice(0, n) to get only the first n items
     .map(({node: post}) => {
     return (
-        <div className="post-preview" key={post.id}>
+        <div className="post-preview" key={post.id} style={{paddingTop:"10px", paddingBottom:"10px"}}>
         <h3>
-            <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link> &nbsp;&bull;&nbsp; 
-            <i>{post.frontmatter.date}</i>
+            <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link>
         </h3>
-        <p>{post.excerpt.replace('Official Story', '')}</p>
+        <h4>
+        <i>{post.frontmatter.date} &nbsp;&nbsp;&nbsp;  {post.frontmatter.time} &nbsp;&nbsp;&nbsp; {post.frontmatter.location} </i>
+        </h4>
+        <div className="snippet" dangerouslySetInnerHTML={{ __html: post.snippet}} />
         </div>
     )
     })
 
     return (
-      <div className = "dark section">
+      <section id="recent-events">
+      <div className = "dark section" style={{paddingTop: "200px"}}>
         <Parallax translateY={["0px", "-200px"]}>
           <h1><span className="highlight">RECENT EVENTS</span></h1>
-          <br/>
-          {recentevents}
-          <br/><br/>
           <h3>
           <Link to={"/events/"}>See All Events &#8594;</Link>
           </h3>
-
+          <br/>
+          {recentevents}
+          <br/><br/>
         </Parallax>
       </div>
+      </section>
     )
   }
   export default Layout

@@ -30,8 +30,16 @@ class Events extends Component {
       <Layout>
       <div className = "page" style = {{backgroundColor: "#021024"}}>
       <div className = "section dark" style = {{paddingRight: "5vw"}}>
-          <h1><span className="highlight">NYU Events</span></h1>
+          <h1><span className="highlight">GUIS Events</span></h1>
           <br/>
+          <p style={{paddingRight:"15vw"}}>
+          NYU events are held in Meyer Hall (4 Washington Place), Room 636, 
+          from 17:00-18:00 Eastern, unless announced otherwise. 
+          Graduate students, postdocs, research 
+          assistants, undergraduates, faculty, and visitors are all 
+          welcome (visitors need to be added to a security check list).  
+          For questions please contact weijima dot nyu dot edu.
+          </p>
           <h4>Filter by: 
           <Button size="lg" onClick={() => this.showNYU()}>NYU Events</Button>
           <Button size="lg" onClick={() => this.reset()}>Reset</Button>
