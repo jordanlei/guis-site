@@ -95,6 +95,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     font-weight: 100;
 }
 
+
 /* Front Page Header */
 .namecard{
     position:absolute;
@@ -191,5 +192,13 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 
 .snippetblock h3{
     display: none;
+}
+
+.event-outerlink{
+    pointer-events: none
+}
+
+.event-link{
+    pointer-events: auto;
 }
     

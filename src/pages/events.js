@@ -59,32 +59,23 @@ class Events extends Component {
               if (post.frontmatter.tags.includes("year"))
               {
                 return (<Row>
-                  <Col xs={3}>{post.frontmatter.title}</Col>
+                  <Col lg={3}>{post.frontmatter.title}</Col>
                 </Row>
                 )
               }
               else{
                 return (
                   <div>
-                    <div className = "mobile-only">
-                    <Link to={post.frontmatter.slug}>
-                    <Card style={{
-                      marginTop: "10px", 
-                      padding: "10px", 
-                      backgroundColor: "rgba(52, 124, 224, 0.1)",
-                      }}>
-                      <h4>{post.frontmatter.date}</h4>
-                      <h4>{post.frontmatter.title}</h4>
-                      <h4>{post.frontmatter.location}</h4>
+                    <div>
+                    <Link className = "event-outerlink" to={post.frontmatter.slug}>
+                    <Card className = "event" style={{backgroundColor: "rgba(0, 0, 0, 0)", border: "none"}}>
+                    <Row>
+                      <Col lg={4} xs={12}><h4>{post.frontmatter.date}</h4></Col>
+                      <Col lg={6} xs={12}><h4><Link className="event-link" to={post.frontmatter.slug}>{post.frontmatter.title}</Link></h4></Col>
+                      <Col lg={2} xs={12}><h4>{post.frontmatter.location}</h4></Col>
+                    </Row>
                     </Card>
                     </Link>
-                    </div>
-                    <div className = "desktop-only">
-                    <Row>
-                      <Col xs={4}><h4>{post.frontmatter.date}</h4></Col>
-                      <Col xs={6}><h4><Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link></h4></Col>
-                      <Col xs={2}><h4>{post.frontmatter.location}</h4></Col>
-                    </Row>
                     </div>
                   </div>
                 )

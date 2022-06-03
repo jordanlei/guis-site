@@ -28,8 +28,8 @@ class Index extends Component {
                       <div className="mobile-only">
                         <h1>growing up</h1>
                         <h1>
-                          &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;in science
-                          </h1><br/>
+                          in science
+                        </h1><br/>
                       </div>
                     </Parallax>
                     </div>
