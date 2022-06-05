@@ -51,8 +51,8 @@ class Stories extends Component {
           </h4>
 
           <Row style={{paddingTop: "50px"}}>
-            <Col xs={4}><h4>Date</h4></Col>
-            <Col xs={7}><h4>Name</h4></Col>
+            <Col lg={4} xs={6}><h4>Date</h4></Col>
+            <Col lg={7} xs={6}><h4>Name</h4></Col>
           </Row>
           <hr style = {{height: 3}}/>
           {
@@ -67,8 +67,8 @@ class Stories extends Component {
               else{
                 return (
                   <Row>
-                    <Col xs={4}><h4>{post.frontmatter.date}</h4></Col>
-                    <Col xs={7}><h4><Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link></h4></Col>
+                    <Col lg={4} xs={6}><h4>{post.frontmatter.date}</h4></Col>
+                    <Col lg={7} xs={6}><h4><Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link></h4></Col>
                   </Row>
                 )
                 }
